@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+  <head>
+    <meta charset="UTF-8">
+    <title>DNE QUIZ</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+      <link rel="stylesheet" href="css/style.css">
+  </head>
+  
+  <body>
+    <div id="content_move">
+      <table cellspacing="0" cellpadding="0" id="tab_questions">
+        <tr>
+          <td class="header_tab" colspan="5">
+            <h1>Que dois-je retenir ?</h1>
+            <h3>Préparer et mener les conseils de classe en terminale</h3>
+            <p> Associez chacune des affirmations proposées ci-dessous à l’étape qui lui correspond ou, le cas échéant, classez-les dans la catégorie des propositions fausses (via un glisser-déposer).</p>
+          </td>
+        </tr>
+        <tr><td height="5"></td></tr>
+        <tr>
+          <td class="style_td"><div id="drop1" class="dragg number_Q"><div class="drop1 drop">1</div></div></td>
+          <td><div class="drag-drop">Les professeurs principaux formulent leurs avis sur les intentions d’orientation des élèves via une fiche dialogue.</div></td>
+          <td width="5"></td>
+          <td class="style_td"><div id="drop2" class="dragg number_Q"><div class="drop2 drop">2</div></div></td>
+          <td><div id="drop2" class="draggable drag-drop">Les professeurs principaux présentent à l’équipe éducative les intentions d’orientation des élèves, via une fiche dialogue préalablement remplie par les lycéens et leur famille.</div></td>
+        </tr>
+        <tr><td height="5"></td></tr>
+        <tr>
+          <td class="style_td"><div id="drop3" class="dragg number_Q"><div class="drop3 drop">3</div></div></td>
+          <td><div id="drop3" class="draggable drag-drop">Le lycéen et sa famille échangent avec les professeurs principaux à propos de la procédure d’admission dans l’enseignement supérieur.</div></td>
+          <td width="5"></td>
+          <td class="style_td"><div id="drop4" class="dragg number_Q"><div class="drop4 drop">4</div></div></td>
+          <td><div id="drop4" class="draggable drag-drop">Le chef d’établissement émet un avis sur les fiches Avenir pour chacun des vœux de poursuite d’études saisis par les lycéens dans la plateforme Parcoursup.</div></td>
+        </tr>
+        <tr><td height="5"></td></tr>
+        <tr>
+          <td class="style_td"><div id="drop5" class="dragg number_Q"><div class="drop5 drop">5</div></div></td>
+          <td><div id="drop5" class="draggable drag-drop">Les professeurs principaux coordonnent pour leur classe et participent, au sein du lycée, à la mise en place des actions d’information à destination des lycéens en lien avec l’enseignement supérieur.</div></td>
+          <td width="5"></td>
+          <td class="style_td"><div id="drop6" class="dragg number_Q"><div class="drop6 drop">6</div></div></td>
+          <td><div id="drop6" class="draggable drag-drop">Les professeurs principaux et l’équipe pédagogique de la classe échangent et contribuent à l’avis qui sera porté sur les fiches Avenir.</div></td>
+        </tr>
+        <tr><td height="5"></td></tr>
+        <tr>
+          <td class="style_td"><div id="drop7" class="dragg number_Q"><div class="drop7 drop">7</div></div></td>
+          <td><div id="drop7" class="draggable drag-drop">Les recommandations formulées par l’équipe pédagogique sur les intentions d’orientation sont reportées dans le dossier scolaire de l’élève.</div></td>
+          <td width="5"></td>
+          <td class="style_td"><div id="drop8" class="dragg number_Q"><div class="drop8 drop">8</div></div></td>
+          <td><div id="drop8" class="draggable drag-drop">Les membres de l’équipe éducative, professeurs, Psy-EN, CPE et l’équipe de direction, échangent et formulent des conseils sur les intentions de poursuite d’études des lycéens.</div></td>
+        </tr>
+      </table>
+  
+      <div id="dropzone">
+        <div id="content_dropzone">
+          <div class="dropzone1 dpzone"><div class="inner-dropzone dropzone1_drop2"><div class="dropzone1_drop8"><div class="txt_prop">Lors du premier conseil de classe en terminale</div></div></div></div>
+          <div class="dropzone2 dpzone"><div class="inner-dropzone dropzone2_drop4"><div class="dropzone2_drop6"><div class="txt_prop">Lors du deuxième conseil de classe en terminale</div></div></div></div>
+          <div class="dropzone3 dpzone"><div class="inner-dropzone dropzone3_drop3"><div class="dropzone3_drop5"><div class="txt_prop">Tout au long de l’année de terminale</div></div></div></div>
+          <div class="dropzone4 dpzone"><div class="inner-dropzone dropzone4_drop1"><div class="dropzone4_drop7"><div class="txt_prop">Propositions fausses</div></div></div></div>
+        </div>
+      </div>
+    </div><!-- Fin div id="content_move" -->
+    <div id="reponse">
+      <div id="rep_drop"></div>
+      <div id="rep_drop2"></div>
+    </div>
+     <!-- inclusion des libraries jQuery et jQuery UI (fichier principal et plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script  src="js/interact.js"></script>
+  </body>
+
+</html>
